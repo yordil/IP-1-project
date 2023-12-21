@@ -9,7 +9,7 @@
   <body>
     <div class="navbar">
       <nav>
-        <table width="100%" bgcolor="white">
+        <table width="100%" bgcolor="#56b394">
           <ul>
             <tr>
               <td width="685px">
@@ -37,11 +37,7 @@
                       <td>
                         <li class="login"><a href="Login.html">Login</a></li>
                       </td>
-                      <td>
-                        <li class="contct">
-                          <a href="signup.html">signup</a>
-                        </li>
-                      </td>
+          
                       <td>
                         <li class="contct">
                           <a href="contactus.html">Contact us</a>
@@ -61,20 +57,38 @@
         </table>
       </nav>
     </div>
-    <section class="signup-wrapper">
-      <main class="form-container">
-        <span class="logo">PrepHub</span>
-        <span class="title">Login</span>
-        <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <input type="submit" value="Login" />
-        </form>
-        <p>you don't have an account? <a href="signup.html">Sign Up</a></p>
-      </main>
-    </section>
-    <table width="100%">
-      <tr align="center" height="500px">
+    <table border="0" bgcolor="#ebc999" width="100%" height="500px">
+  <tr>
+    <td align="center">
+      <table border="0" align="center">
+        <tr align="center">
+          <td align="center" colspan="2"><span class="logo">PrepHub</span></td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2"><span class="title">Login</span></td>
+        </tr>
+        <tr>
+          <form>
+            <td><label for="username">Username:</label></td>
+            <td><input type="text" id="username" placeholder="Username" /></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" placeholder="Password" /></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><input type="submit" value="Login" /></td>
+          </form>
+        </tr>
+        <tr>
+          <td align="center" colspan="2">you don't have an account? <a href="signup.html">Sign Up</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+    <table width="100%" height="150px" bgcolor="#495344">
+      <tr align="center" height="100px">
         <td>&copy; 2023 PrepHub. All rights reserved.</td>
       </tr>
     </table>
