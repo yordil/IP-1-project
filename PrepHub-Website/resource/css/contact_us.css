@@ -1,0 +1,256 @@
+body {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  color: rgba(248, 248, 248, 0.938);
+   margin-bottom: 50px;
+}
+.Header {
+  align-items: center;
+
+  top: 0;
+  left: 0;
+
+  padding: 20px 5%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  color: rgb(46, 9, 9);
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 10px;
+  position: relative;
+  padding: 0 10px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s;
+}
+
+a:hover {
+  color: rgb(21, 21, 255);
+}
+
+a:hover:after {
+  width: 100%;
+}
+#container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/contact-img.jpg");
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+}
+.contact-parent {
+  display: flex;
+  margin: 0;
+}
+.intro {
+  text-align: center;
+}
+.contact-child {
+  display: flex;
+  flex: 1;
+  box-shadow: 0px colo0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+.child1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.child1 p {
+  padding-left: 20%;
+  font-size: 20px;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.child1 p span {
+  padding-left: 11%;
+  font-size: 16px;
+  color: #9df2fd;
+}
+
+.child2 {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inside-contact {
+  padding-top: 6rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inside-contact h2 {
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 20%;
+  margin-top: 45px;
+}
+
+.inside-contact h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #0085e2;
+}
+.form {
+  padding-top: 2rem;
+}
+
+.inside-contact input {
+  width: 27rem;
+  color: #fff;
+  background-color: rgba(136, 133, 133, 0.3);
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.inside-contact textarea {
+  width: 27rem;
+  color: #fff;
+  background-color: rgba(136, 133, 133, 0.3);
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.inside-contact input[type="submit"] {
+  width: 9rem;
+  background-color: rgb(16, 135, 190);
+  padding: 5px;
+  outline: none;
+  color: #5a5656;
+  transition: 0.2s;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border: 2px solid #000;
+  margin-top: 0.9rem;
+}
+
+.inside-contact input[type="submit"]:hover {
+  background-color: #fff;
+  transition: 0.2s;
+}
+.fa {
+  padding: 8px;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(187, 182, 182);
+}
+.fa:hover {
+  color: rgb(16, 135, 190);
+}
+.togle {
+  display: none;
+}
+
+.Footer {
+  bottom: 0;
+  left: 0;
+
+  height: 50px;
+  background: rgb(36, 32, 30);
+  text-align: center;
+  line-height: 50px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-content {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 794px) {
+  #container {
+    height: auto;
+  }
+  .Header {
+    padding: 20px 5%;
+  }
+
+  a {
+    margin-left: 5px;
+  }
+
+  .quiz-button {
+    width: 90%;
+  }
+
+  .navbar {
+    display: none; /* Hide the navigation menu by default */
+  }
+
+  .navbar-toggle {
+    display: block; /* Display the toggle button on smaller screens */
+    text-align: right; /* Align the button to the right */
+    margin-right: 10px; /* Add some margin to the right */
+  }
+
+  .navbar-toggle a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(46, 9, 9);
+    font-weight: 700;
+  }
+
+  .togle {
+    display: block;
+  }
+
+  .contact-parent {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .child1,
+  .child2 {
+    padding: 50px 0;
+  }
+
+  .child1 p {
+    padding-left: 10%;
+    font-size: 16px;
+  }
+  .child1 p span {
+    padding-left: 17%;
+    font-size: 16px;
+    color: #9df2fd;
+  }
+
+  .inside-contact h2 {
+    padding-left: 24%;
+  }
+
+  .inside-contact input,
+  .inside-contact textarea {
+    width: 100%;
+  }
+}

@@ -3,94 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./resource/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./resource/css/formStyle.css" />
     <title>Login</title>
   </head>
   <body>
-    <div class="navbar">
-      <nav>
-        <table width="100%" bgcolor="#56b394">
-          <ul>
-            <tr>
-              <td width="685px">
-                <div class="logo">
-                  <img
-                    src="./resource/logo-no-background.png"
-                    alt="logo"
-                    width="100px"
-                  />
-                </div>
-              </td>
-
-              <td>
-                <table>
-                  <tr>
-                    <ul type="none">
-                      <td>
-                        <li class="Home"><a href="index.html">Home</a></li>
-                      </td>
-                      <td>
-                        <li class="quiz">
-                          <a href="subject.html">Take quiz</a>
-                        </li>
-                      </td>
-                      <td>
-                        <li class="login"><a href="Login.html">Login</a></li>
-                      </td>
-          
-                      <td>
-                        <li class="contct">
-                          <a href="contactus.html">Contact us</a>
-                        </li>
-                      </td>
-                      <td>
-                        <li class="forum">
-                          <a href="forum.html">Forum</a>
-                        </li>
-                      </td>
-                    </ul>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </ul>
-        </table>
+    <header class="Header">
+      <img
+        src="./resource/img/logo-no-background.png"
+        alt="Logo"
+        width="90"
+        height="95"
+      />
+      <a class="togle" href="#">☰ Menu</a>
+      <nav class="navbar">
+       <a href="index.html">Home</a>
+            <a href="subject.html">Take quiz</a>
+            <a href="Login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="forum.html">Forum</a>
       </nav>
-    </div>
-    <table border="0" bgcolor="#ebc999" width="100%" height="500px">
-  <tr>
-    <td align="center">
-      <table border="0" align="center">
-        <tr align="center">
-          <td align="center" colspan="2"><span class="logo">PrepHub</span></td>
-        </tr>
-        <tr>
-          <td align="center" colspan="2"><span class="title">Login</span></td>
-        </tr>
-        <tr>
-          <form>
-            <td><label for="username">Username:</label></td>
-            <td><input type="text" id="username" placeholder="Username" /></td>
-        </tr>
-        <tr>
-            <td><label for="password">Password:</label></td>
-            <td><input type="password" id="password" placeholder="Password" /></td>
-        </tr>
-        <tr>
-            <td align="center" colspan="2"><input type="submit" value="Login" /></td>
-          </form>
-        </tr>
-        <tr>
-          <td align="center" colspan="2">you don't have an account? <a href="signup.html">Sign Up</a></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-    <table width="100%" height="150px" bgcolor="#495344">
-      <tr align="center" height="100px">
-        <td>&copy; 2023 PrepHub. All rights reserved.</td>
-      </tr>
-    </table>
+    </header>
+    <section class="signup-wrapper">
+      <main class="form-container">
+        <span class="logo">PrepHub</span>
+        <span class="title">Login</span>
+        <form>
+          <input type="text" placeholder="Username" />
+          <input type="password" placeholder="Password" />
+        </form>
+        <button class="fire-btn">Login</button>
+        <p>
+          you don't have an account?
+          <a href="signup.html" class="forward">Sign Up</a>
+        </p>
+      </main>
+    </section>
+    <footer class="Footer">
+        <div class="footer-content">
+            &copy 2024 PrepHub. All rights reserved.
+        </div>
+    </footer>
   </body>
 </html>

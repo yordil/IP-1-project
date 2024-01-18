@@ -5,64 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		 <link rel="icon" href="./resource/logo.svg" type="image/x-icon" />
 		<title>2012 English</title>
+		<link rel="stylesheet" href="resource/css/question.css">
 	</head>
 	<body>
-		<div class="container">
-          <div class="navbar">
-            <nav>
-              <table width="100%" bgcolor="#56b394">
-                <ul>
-                  <tr>
-                    <td width="685px">
-                      <div class="logo">
-                        <img
-                          src="./resource/logo-no-background.png"
-                          alt="logo"
-                          width="100px"
-                        />
-                      </div>
-                    </td>
+		 <header class="Header">
 
-                    <td>
-                      <table>
-                        <tr>
-                          <ul type="none">
-                            <td>
-                              <li class="Home">
-                                <a href="index.html">Home</a>
-                              </li>
-                            </td>
-                            <td>
-                              <li class="quiz">
-                                <a href="subject.html">Take quiz</a>
-                              </li>
-                            </td>
-                            <td>
-                              <li class="login">
-                                <a href="Login.html">Login</a>
-                              </li>
-                            </td>
-
-                            <td>
-                              <li class="contct">
-                                <a href="contactus.html">Contact us</a>
-                              </li>
-                            </td>
-                            <td>
-                              <li class="forum">
-                                <a href="forum.html">Forum</a>
-                              </li>
-                            </td>
-                          </ul>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </ul>
-              </table>
-            </nav>
-          </div>
-        </div>
+        <img src="./resource/img/logo-no-background.png" alt="Logo" width="90" height="95">
+        <a class="togle"href="#">☰ Menu</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="subject.html">Take quiz</a>
+            <a href="Login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="forum.html">Forum</a>
+        </nav>
+    </header>
+		<div class="aside">Subjects</div>
+		<div class="main">
 		<label
 			>A. Completion [1-15]<br />
 			DIRECTIONS: questions 25-41 are incomplete sentences. There are four
@@ -480,14 +440,23 @@
 		<br />
 		<label for="submit">
 			<input type="submit" name="answer" id="answer" value="See Answer" />
-		</label>
-		<a href="./resources.html">Resources</a>
-    <footer>
-      <table width="100%" bgcolor="#495344">
-        <tr align="center" height="150px">
-          <td>&copy; 2023 PrepHub. All rights reserved.</td>
-        </tr>
-      </table>
+		 <a
+              href="resources.html"
+              style="
+                background: linear-gradient(yellow, rgb(43, 147, 74));
+                text-decoration: none;
+                display: inline-block;
+                padding: 0 10px;
+                color: black;
+                font-weight: 600;
+              "
+              >Resources</a
+            ></label>
+		</div>
+		<footer class="Footer">
+        <div class="footer-content">
+            &copy 2024 PrepHub. All rights reserved.
+        </div>
     </footer>
 	</body>
 </html>

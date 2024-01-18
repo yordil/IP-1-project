@@ -4,142 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact-us</title>
-    <link rel="icon" href="./resource/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./resource/css/contact_us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="navbar">
-      <nav>
-        <table width="100%" bgcolor="#56b394">
-          <ul>
-            <tr>
-              <td width="685px">
-                <div class="logo">
-                  <img
-                    src="./resource/logo-no-background.png"
-                    alt="logo"
-                    width="100px"
-                  />
-                </div>
-              </td>
-
-              <td>
-                <table>
-                  <tr>
-                    <ul type="none">
-                      <td>
-                        <li class="Home"><a href="index.html">Home</a></li>
-                      </td>
-                      <td>
-                        <li class="quiz">
-                          <a href="subject.html">Take quiz</a>
-                        </li>
-                      </td>
-                      <td>
-                        <li class="login"><a href="Login.html">Login</a></li>
-                      </td>
-
-                      <td>
-                        <li class="contct">
-                          <a href="contactus.html">Contact us</a>
-                        </li>
-                      </td>
-                      <td>
-                        <li class="forum">
-                          <a href="forum.html">Forum</a>
-                        </li>
-                      </td>
-                    </ul>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </ul>
-        </table>
+    <header class="Header">
+      <img
+        src="./resource/img/logo-no-background.png"
+        alt="Logo"
+        width="70"
+        height="95"
+      />
+      <a class="togle" href="#">☰ Menu</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="subject.html">Take quiz</a>
+        <a href="Login.html">Login</a>
+        <a href="signup.html">Signup</a>
+        <a href="contactus.html">Contact us</a>
+        <a href="forum.html">Forum</a>
       </nav>
-    </div>
-    <div class="container">
-      <table class="contact-table" width="100%" bgcolor="#ebc999">
-        <tr align="start">
-          <td class="contact-child child1" width="50%">
-            <div class="intro">
-              <h1>Let's get in touch</h1>
-              <h3>we are open for any suggestion or just to have a chat</h3>
+    </header>
+    <div id="container">
+      <div class="contact-parent">
+        <div class="contact-child child1">
+          <div class="intro">
+            <h1>Let's get in touch</h1>
+            <h3>we are open for any suggestion or just to have a chat</h3>
+          </div>
+          <p>
+            <i
+              class="fa fa-map-marker"
+              aria-hidden="true"
+              style="font-size: 36px"
+            ></i>
+            ADDRESS <br />
+            <span> AASTU , Addis-Ababa-ETHIOPIA </span>
+          </p>
+          <p>
+            <i class="fa fa-phone" style="font-size: 36px"></i>PHONE <br />
+            <span> +251-(94)-(563)-(7828)</span>
+          </p>
+          <p>
+            <i class="fa fa-telegram" style="font-size: 36px"></i>TELEGRAM<br />
+            <span>@tech-titan</span>
+          </p>
+          <p>
+            <i
+              class="fa fa-globe"
+              aria-hidden="true"
+              style="font-size: 36px"
+            ></i>
+            WEBSITE <br />
+            <span>prep-hub_app.com</span>
+
+            <center>
+              <a href="a" class="fa fa-facebook"></a>
+              <a href="a" class="fa fa-google"></a>
+              <a href="a" class="fa fa-twitter"></a>
+              <a href="a" class="fa fa-linkedin"></a>
+              <a href="a" class="fa fa-youtube"></a>
+            </center>
+          </p>
+        </div>
+
+        <div class="contact-child child2">
+          <div class="inside-contact">
+            <h2>Contact Us</h2>
+
+            <h3>
+              <span id="confirm"></span>
+            </h3>
+            <div class="form">
+              <label for=""><h4>Full Name</h4></label>
+              <input id="txt_name" type="text" required="required" /><br />
+              <label for=""><h4>Email</h4></label>
+              <input id="txt_email" type="text" required="required" /><br />
+              <label for=""><h4>Subject</h4></label>
+              <input id="txt_subject" type="text" required="required" /><br />
+              <label for=""><h4>Your Message</h4></label>
+              <textarea
+                id="txt_message"
+                rows="7"
+                cols="70"
+                required="required"
+              ></textarea
+              ><br />
+              <input type="submit" id="btn_send" value="SEND" />
             </div>
-            <p>
-              <i class="fa fa-map-marker" aria-hidden="true"></i> Address
-              <span>
-                AASTU
-                <br />
-                ETHIOPIA, addis-ababa
-              </span>
-            </p>
-            <p>
-              <i class="fa fa-phone" style="font-size: 24px"></i>Phone <br />
-              <span> +2519-45-63-78-28</span>
-            </p>
-            <p>
-              <i class="fa fa-telegram" style="font-size: 24px"></i
-              >Telegram<br />
-              <span>@g3dysz</span>
-            </p>
-            <p>
-              <i class="fa fa-globe" aria-hidden="true"></i> Website <br />
-              <span>PrepHub.com</span>
-            </p>
-            <i class="fas fa-phone-volume" style="font-size: 36px"></i>
-          </td>
-          <td class="contact-child child2" width="50%" align="center">
-            <div class="inside-contact">
-              <h2>Contact Us</h2>
-              <h3>
-                <span id="confirm"></span>
-              </h3>
-              <form>
-                <table>
-                  <tr>
-                    <td><label for="txt_name">Full Name</label></td>
-                    <td>
-                      <input id="txt_name" type="text" required="required" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><label for="txt_email">Email</label></td>
-                    <td>
-                      <input id="txt_email" type="text" required="required" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><label for="txt_subject">Subject</label></td>
-                    <td>
-                      <input id="txt_subject" type="text" required="required" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><label for="txt_message">Message</label></td>
-                    <td>
-                      <textarea
-                        id="txt_message"
-                        rows="4"
-                        cols="20"
-                        required="required"
-                      ></textarea>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td><input type="submit" id="btn_send" value="SEND" /></td>
-                  </tr>
-                </table>
-              </form>
-            </div>
-          </td>
-        </tr>
-      </table>
+          </div>
+        </div>
+      </div>
     </div>
-    <table width="100%" bgcolor="#495344">
-      <tr align="center" height="150px">
-        <td>&copy; 2023 PrepHub. All rights reserved.</td>
-      </tr>
-    </table>
+
+    <footer class="Footer">
+      <div class="footer-content">&copy 2024 PrepHub. All rights reserved.</div>
+    </footer>
   </body>
 </html>
