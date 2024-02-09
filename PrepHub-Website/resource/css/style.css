@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-body{
-   margin-bottom: 50px;
+body {
+  margin-bottom: 50px;
 }
 .Backim {
   height: 100vh;
@@ -148,7 +147,21 @@ h1 {
   .navbar {
     display: none;
   }
-
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    top: 136px;
+    right: 0px;
+    gap: 20px;
+    background-color: #fff;
+    padding: 10px 0px 10px 40px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1;
+  }
   .navbar-toggle {
     display: block;
     text-align: right;
@@ -162,14 +175,16 @@ h1 {
     color: rgb(46, 9, 9);
     font-weight: 700;
   }
-
+  .navbar a:hover:after {
+    width: 18%;
+  }
   .togle {
     display: block;
   }
-  p,h1{
+  p,
+  h1 {
     color: rgb(0, 0, 0);
   }
- 
 }
 
 @media screen and (max-width: 600px) {

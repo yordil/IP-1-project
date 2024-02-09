@@ -103,9 +103,47 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(".form");
+        const nameInput = document.getElementById("txt_name");
+        const emailInput = document.getElementById("txt_email");
+        const subjectInput = document.getElementById("txt_subject");
+        const messageInput = document.getElementById("txt_message");
+        const sendButton = document.getElementById("btn_send");
+
+        sendButton.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          // Check if all input fields are filled
+          if (
+            nameInput.value.trim() === "" ||
+            emailInput.value.trim() === "" ||
+            subjectInput.value.trim() === "" ||
+            messageInput.value.trim() === ""
+          ) {
+            alert("Please fill in all fields");
+            return;
+          }
+
+          // Check if email format is correct using regular expression
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(emailInput.value)) {
+            alert("Please enter a valid email address");
+            return;
+          }
+
+          // If all validations pass, you can submit the form or perform any other action
+          alert("Form submitted successfully!");
+          form.reset();
+        });
+      });
+    </script>
 
     <footer class="Footer">
       <div class="footer-content">&copy 2024 PrepHub. All rights reserved.</div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -3,87 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resource/css/forum.css" />
 
     <title>Q&A Forum</title>
   </head>
   <body>
-    <div class="navbar">
-      <nav>
-        <table width="100%" bgcolor="#56b394">
-          <ul>
-            <tr>
-              <td width="685px">
-                <div class="logo">
-                  <img
-                    src="./resource/logo-no-background.png"
-                    alt="logo"
-                    width="100px"
-                  />
-                </div>
-              </td>
-
-              <td>
-                <table>
-                  <tr>
-                    <ul type="none">
-                      <td>
-                        <li class="Home"><a href="index.html">Home</a></li>
-                      </td>
-                      <td>
-                        <li class="quiz">
-                          <a href="subject.html">Take quiz</a>
-                        </li>
-                      </td>
-                      <td>
-                        <li class="login"><a href="Login.html">Login</a></li>
-                      </td>
-
-                      <td>
-                        <li class="contct">
-                          <a href="contactus.html">Contact us</a>
-                        </li>
-                      </td>
-                      <td>
-                        <li class="forum">
-                          <a href="forum.html">Forum</a>
-                        </li>
-                      </td>
-                    </ul>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </ul>
-        </table>
+    <header class="Header">
+      <img
+        src="./resource/img/logo-no-background.png"
+        alt="Logo"
+        width="90"
+        height="95"
+      />
+      <a class="togle" href="#">☰ Menu</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="subject.html">Take quiz</a>
+        <a href="Login.html">Login</a>
+        <a href="signup.html">Signup</a>
+        <a href="contactus.html">Contact us</a>
+        <a href="forum.html">Forum</a>
       </nav>
-    </div>
+    </header>
     <div id="container">
-      <table width="100%" height="400px" bgcolor="#ebc999">
-        <tr align="center">
-          <td height="50px"><h1>Question and Answer Forum</h1></td>
-        </tr>
-        <tr align="center">
-          <td>
-            <div id="questions"></div>
-          </td>
-        </tr>
-        <tr align="center">
-          <td>
-            <input
-              type="text"
-              id="questionInput"
-              placeholder="Ask a question"
-            />
-            <button>Ask</button>
-          </td>
-        </tr>
-      </table>
+      <h1>
+        <label for="questionInput" style="margin-top: 40px"
+          >Ask a question</label
+        >
+      </h1>
+      <form id="questionForm">
+        <input
+          type="text"
+          id="questionInput"
+          placeholder="Type your question here"
+        />
+        <button id="ASK" type="submit">Ask</button>
+      </form>
+      <div id="questions"></div>
     </div>
-   
+
     <footer class="Footer">
-        <div class="footer-content">
-            &copy 2024 PrepHub. All rights reserved.
-        </div>
+      <div class="footer-content">&copy 2024 PrepHub. All rights reserved.</div>
     </footer>
+    <script src="forum.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

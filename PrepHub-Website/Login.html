@@ -16,12 +16,12 @@
       />
       <a class="togle" href="#">☰ Menu</a>
       <nav class="navbar">
-       <a href="index.html">Home</a>
-            <a href="subject.html">Take quiz</a>
-            <a href="Login.html">Login</a>
-            <a href="signup.html">Signup</a>
-            <a href="contactus.html">Contact us</a>
-            <a href="forum.html">Forum</a>
+        <a href="index.html">Home</a>
+        <a href="subject.html">Take quiz</a>
+        <a href="Login.html">Login</a>
+        <a href="signup.html">Signup</a>
+        <a href="contactus.html">Contact us</a>
+        <a href="forum.html">Forum</a>
       </nav>
     </header>
     <section class="signup-wrapper">
@@ -29,10 +29,30 @@
         <span class="logo">PrepHub</span>
         <span class="title">Login</span>
         <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+          <input
+            type="text"
+            placeholder="Username"
+            id="login-username"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            id="login-password"
+            required
+          />
         </form>
-        <button class="fire-btn">Login</button>
+        <button class="fire-btn" id="login-submit">Login</button>
+        <script>
+          document
+            .getElementById("login-submit")
+            .addEventListener("click", function (event) {
+              console.log("clicked login");
+              if (!validateLoginForm()) {
+                event.preventDefault();
+              }
+            });
+        </script>
         <p>
           you don't have an account?
           <a href="signup.html" class="forward">Sign Up</a>
@@ -40,9 +60,8 @@
       </main>
     </section>
     <footer class="Footer">
-        <div class="footer-content">
-            &copy 2024 PrepHub. All rights reserved.
-        </div>
+      <div class="footer-content">&copy 2024 PrepHub. All rights reserved.</div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
