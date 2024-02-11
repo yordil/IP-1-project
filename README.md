@@ -4,10 +4,10 @@
 
 ## Group Members:
 
-| Name               | Id          |
-| ------------------ | ----------- |
-| Samuel Girma       | ETS1421/14  |
-| Solomon Tadesse    | ETS1495/14  |
-| Surafel Abera      | ETS1507/14  |
-| Yordanos Legesse   | ETS1760/14  |
-| Zekarias Kumsa     | ETS1789/14  |
+|No.       | Name               | Id          |
+| -------- | ------------------ | ----------- |
+| 1        | Samuel Girma       | ETS1421/14  |
+| 2        | Solomon Tadesse    | ETS1495/14  |
+| 3        | Surafel Abera      | ETS1507/14  |
+| 4        | Yordanos Legesse   | ETS1760/14  |
+| 5        | Zekarias Kumsa     | ETS1789/14  |
