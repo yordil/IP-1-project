@@ -13,4 +13,4 @@
 | 5        | Zekarias Kumsa     | ETS1789/14  |
 
 
-You can check the project [Here](https://yordil.github.io/IP-1-project/)
+You can check the project [Here](https://yordil.github.io/IP-1-project/).
